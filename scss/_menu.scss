@@ -14,19 +14,23 @@
     background: set-text-color($primary-color);
     @include easeOut;
   }
+
   // rotate menu lines into X
   &.close {
     transform: rotate(180deg);
 
     .btn-line {
+
       //Line 1
       &:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
       }
+
       //Line 2
       &:nth-child(2) {
         opacity: 0;
       }
+
       //Line 3
       &:nth-child(3) {
         transform: rotate(-45deg) translate(6px, -6px);
@@ -73,6 +77,7 @@
       transform: translate3d(0, 0, 0);
     }
   }
+
   //branding side
   &-branding {
     background: $primary-color;
@@ -87,7 +92,7 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: url('../img/small.jpg');
+      background: url('../img/profile2.jpg');
       background-size: 32vh;
       background-position: center;
       border-radius: 50%;
@@ -104,7 +109,7 @@
       transform: translate3d(0, 0, 0);
     }
 
-    &.current > a {
+    &.current>a {
       color: $secondary-color;
     }
   }
@@ -125,6 +130,7 @@
     }
   }
 }
+
 //Delay each nav item slide
 @for $x from 1 through 4 {
   .nav-item:nth-child(#{$x}) {
